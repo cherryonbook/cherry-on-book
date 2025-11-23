@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cherry on Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cherry: {
+                50: '#fff0f3',
+                100: '#ffe3e8',
+                200: '#ffc9d2',
+                300: '#ffa1b0',
+                400: '#ff6b84',
+                500: '#f73b5d', // Brand Color
+                600: '#e0163d',
+                700: '#bc0d2e',
+                800: '#9d0f2b',
+                900: '#831229',
+              }
+            },
+            fontFamily: {
+              serif: ['Merriweather', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-stone-50 text-stone-900 antialiased selection:bg-cherry-200 selection:text-cherry-900">
+    <div id="root"></div>
+  </body>
+</html>
